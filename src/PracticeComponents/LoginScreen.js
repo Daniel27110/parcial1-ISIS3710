@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Button, Form } from 'react-bootstrap';
-import users from '../userData/users.json';
+import users from '../UserPracticeData/users.json';
 
 function LoginScreen() {
     const [step, setStep] = useState(1);

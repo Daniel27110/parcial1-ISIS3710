@@ -1,15 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import LoginScreen from './PracticeComponents/LoginScreen'
 import CardList from './PracticeComponents/CardList';
-import CardDetail from './PracticeComponents/CardDetail';
+import CardDetail from './PracticeComponents/CardDetails';
 import ForumComponent from './PracticeComponents/ForumComponent';
 import TopNavbar from './PracticeComponents/TopNavbar';
 import Sidebar from './PracticeComponents/SideBar';
 
-import CardList2 from './PracticeComponents/CardsCasas';
+import CardList2 from './PracticeComponents/CardCasas';
 
 
 function App() {

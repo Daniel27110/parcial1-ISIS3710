@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -14,22 +13,12 @@ function CardList2() {
         fetch('https://gist.githubusercontent.com/josejbocanegra/0067d2b28b009140fee423cfc84e40e6/raw/6e6b11160fbcacb56621b6422684d615dc3a0d33/spaces.json')
             .then(response => response.json())
             .then(data => {
-                const newCards = data.map(item => ({ ...item, liked: false, likeCount: 0 }));
-                setImages(newCards);
+                let newCards = data.map(item => ({ ...item, liked: false, likeCount: 0 }));
+                newCards = setImages(newCards);
                 setCards(newCards);
             });
     }, []);
 
-    const handleLikeMultiple = (id) => {
-        const newCards = cards.map(card => {
-            if (card.id === id) {
-                card.liked = !card.liked;
-                card.likeCount = card.likeCount ? card.likeCount + 1 : 1;
-            }
-            return card;
-        });
-        setCards(newCards);
-    }
 
     function setImages(cards) {
         // if a card has the word "Casa" in its name, it will have a house image, otherwise it will have a placeholder image
@@ -46,6 +35,8 @@ function CardList2() {
             return card;
         }
         );
+
+        return newCards;
     }
 
 
