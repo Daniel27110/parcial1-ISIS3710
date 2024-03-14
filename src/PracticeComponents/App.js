@@ -2,14 +2,14 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-import LoginScreen from './PracticeComponents/LoginScreen'
-import CardList from './PracticeComponents/CardList';
-import CardDetail from './PracticeComponents/CardDetail';
-import ForumComponent from './PracticeComponents/ForumComponent';
-import TopNavbar from './PracticeComponents/TopNavbar';
-import Sidebar from './PracticeComponents/SideBar';
+import LoginScreen from './componets/LoginScreen';
+import CardList from './componets/CardList';
+import CardDetail from './componets/CardDetail';
+import ForumComponent from './componets/ForumComponent';
+import TopNavbar from './componets/TopNavbar';
+import Sidebar from './componets/SideBar';
 
-import CardList2 from './PracticeComponents/CardsCasas';
+import CardList2 from './componets/CardsCasas';
 
 
 function App() {
