@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import CardList from './components/CardList';
+import CardList2 from './components/CardFotos';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <BrowserRouter>
           <Routes>
 
-            <Route path="/" element={<CardList />} ></Route>
+            <Route path="/" element={<CardList2 />} ></Route>
 
 
 

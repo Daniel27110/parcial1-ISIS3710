@@ -4,6 +4,10 @@
         "username": "JuanNombreUsuario",
         "firstname": "daniel",
         "lastname": "vargas",
-        "description": "descripcion muy larga de un perfil"
+        "description": "descripcion muy larga de un perfil",
+        "url": "www.websiteRandom.com",
+        "posts": 123,
+        "followers": 234,
+        "following": 3412
     }
 ]
