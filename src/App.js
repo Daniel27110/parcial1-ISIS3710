@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import CardList2 from './components/CardFotos';
+import CardDetail from './components/CardDetails';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Routes>
 
             <Route path="/" element={<CardList2 />} ></Route>
+            <Route path="/card/:id" element={<CardDetail />} />
 
 
 

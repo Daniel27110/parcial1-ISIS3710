@@ -53,9 +53,23 @@ function CardList2() {
 
                         <h1> {user.username} </h1>
 
-                        <Row>
+                        <Row className="">
+
+                            <div style={{ height: '20px' }}></div>
+
+
                             <strong> {user.firstname} {user.lastname} </strong>
+
+                            <div style={{ height: '10px' }}></div>
+
                             <p> {user.description}</p>
+                            <a> {user.url}</a>
+
+                            <div style={{ height: '20px' }}></div>
+
+
+                            <strong> {user.posts} Posts {user.followers} followers  {user.following} following</strong>
+
                         </Row>
                     </Col>
 
@@ -66,7 +80,7 @@ function CardList2() {
             ))}
 
 
-            <div style={{ height: '20px' }}></div>
+            <div style={{ height: '30px' }}></div>
             <Row>
                 {cards.map((card, index) => (
                     <Col md={4} key={card.id} className="mb-3">
