@@ -19,7 +19,6 @@ function CardDetail() {
                 let newCards = data.map(item => ({ ...item }));
                 setCards(newCards);
 
-
             });
     }, []);
 
@@ -28,11 +27,12 @@ function CardDetail() {
             <Card style={{ width: '36rem', margin: 'auto' }}>
                 <Row noGutters>
                     <Col md={6}>
-                        <Card.Img variant="top" src={cards[id].photo} />
+                        <Card.Img variant="top" src="https://picsum.photos/350" />
                     </Col>
                     <Col md={6}>
                         <Card.Body>
                             <Card.Title>Foto numero {id}</Card.Title>
+
                         </Card.Body>
                     </Col>
                 </Row>

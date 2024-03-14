@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import CardList2 from './components/CardFotos';
 import CardDetail from './components/CardDetails';
+import ForumComponent from './components/ForumComponent';
 
 
 function App() {
@@ -16,14 +17,10 @@ function App() {
 
             <Route path="/" element={<CardList2 />} ></Route>
             <Route path="/card/:id" element={<CardDetail />} />
+            <Route path="/forum" element={<ForumComponent />} ></Route>
 
 
 
-            <Route path="*" element={
-              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-                <h1>Not Found</h1>
-              </div>
-            } />
 
           </Routes>
         </BrowserRouter>

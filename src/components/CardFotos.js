@@ -45,8 +45,12 @@ function CardList2() {
 
             {users.map((user, index) => (
                 <Row>
+
                     <Col xs={6} md={4}>
-                        <Image style={{ width: '18rem', margin: 'auto' }} src={user.photo} roundedCircle />
+                        <Link to={`/forum`} style={{ color: 'black', textDecoration: 'none' }}>
+
+                            <Image style={{ width: '18rem', margin: 'auto' }} src={user.photo} roundedCircle />
+                        </Link>
                     </Col>
 
                     <Col xs={6} md={4}>
