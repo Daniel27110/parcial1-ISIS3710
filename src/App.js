@@ -2,14 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import LoginScreen from './PracticeComponents/LoginScreen'
-import CardList from './PracticeComponents/CardList';
-import CardDetail from './PracticeComponents/CardDetails';
-import ForumComponent from './PracticeComponents/ForumComponent';
-import TopNavbar from './PracticeComponents/TopNavbar';
-import Sidebar from './PracticeComponents/SideBar';
-
-import CardList2 from './PracticeComponents/CardCasas';
+import CardList from './components/CardList';
 
 
 function App() {
@@ -20,14 +13,7 @@ function App() {
         <BrowserRouter>
           <Routes>
 
-            <Route path="/" element={<LoginScreen />} />
-            <Route path="/home" element={<CardList />} />
-            <Route path="/card/:id" element={<CardDetail />} />
-            <Route path="/forum" element={<ForumComponent />} />
-            <Route path="/bar" element={<TopNavbar />} />
-            <Route path="/side" element={<Sidebar />} />
-
-            <Route path="/casas" element={<CardList2 />} />
+            <Route path="/" element={<CardList />} ></Route>
 
 
 
