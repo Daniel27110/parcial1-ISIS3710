@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FormattedMessage } from 'react-intl';
 
 function CardDetail() {
     const { id } = useParams();
@@ -36,7 +37,7 @@ function CardDetail() {
                                 </Col>
                                 <Col md={6}>
                                     <Card.Body>
-                                        <Card.Title>Foto numero {id}</Card.Title>
+                                        <Card.Title> <FormattedMessage id="Image" /> #{card.id}</Card.Title>
                                     </Card.Body>
                                 </Col>
                             </Row>
@@ -52,7 +53,7 @@ function CardDetail() {
                 <div className="d-flex justify-content-center">
                     <Link to={`/`} style={{ color: 'black', textDecoration: 'none' }}>
                         <Button variant="primary" type="submit">
-                            Volver
+                            <FormattedMessage id="Return" />
                         </Button>
                     </Link>
                 </div>

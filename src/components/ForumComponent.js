@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Button, Container, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
+
 
 const ForumComponent = () => {
     const [users, setUsers] = useState([]);
@@ -32,24 +34,42 @@ const ForumComponent = () => {
                     <Card.Img variant="top" src={user.photo} /> {/* Replace with your image URL */}
                     < Card.Body >
                         <Form onSubmit={handleSubmit}>
+
                             <Form.Group controlId="username" className="mb-3">
-                                <Form.Label>Nombre de usuario</Form.Label>
-                                <Form.Control type="text" placeholder="username" value={username} onChange={(e) => setUsername(e.target.value)} required />
+                                <Form.Label> <FormattedMessage id="Username" /></Form.Label>
+                                <FormattedMessage id="Username">
+                                    {(msg) => (
+                                        <Form.Control type="text" placeholder={msg} value={username} onChange={(e) => setUsername(e.target.value)} required />
+                                    )}
+                                </FormattedMessage>
                             </Form.Group>
 
                             <Form.Group controlId="name" className="mb-3">
-                                <Form.Label>Nombre completo</Form.Label>
-                                <Form.Control type="text" placeholder="nombre completo" value={age} onChange={(e) => setAge(e.target.value)} required />
+                                <Form.Label> <FormattedMessage id="Name" /></Form.Label>
+                                <FormattedMessage id="Name">
+                                    {(msg) => (
+                                        <Form.Control type="text" placeholder={msg} value={age} onChange={(e) => setAge(e.target.value)} required />
+                                    )}
+                                </FormattedMessage>
                             </Form.Group>
 
                             <Form.Group controlId="desc" className="mb-3">
-                                <Form.Label>Descripción del perfil</Form.Label>
-                                <Form.Control type="text" placeholder="descripcion del perfil" value={gender} onChange={(e) => setGender(e.target.value)} required />
+                                <Form.Label> <FormattedMessage id="Description" /></Form.Label>
+                                <FormattedMessage id="Description">
+                                    {(msg) => (
+                                        <Form.Control type="text" placeholder={msg} value={gender} onChange={(e) => setGender(e.target.value)} required />
+                                    )}
+                                </FormattedMessage>
                             </Form.Group>
-
                             <Form.Group controlId="url" className="mb-3">
-                                <Form.Label>URL pagina personal</Form.Label>
-                                <Form.Control type="text" placeholder="URL pagina personal" value={date} onChange={(e) => setDate(e.target.value)} required />
+                                <Form.Label>
+                                    <FormattedMessage id="Personal website" />
+                                </Form.Label>
+                                <FormattedMessage id="Personal website">
+                                    {(msg) => (
+                                        <Form.Control type="text" placeholder={msg} value={date} onChange={(e) => setDate(e.target.value)} required />
+                                    )}
+                                </FormattedMessage>
                             </Form.Group>
 
 

@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import { Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
+import { FormattedMessage } from 'react-intl';
 
 function CardList2() {
     const [cards, setCards] = useState([]);
@@ -72,8 +73,17 @@ function CardList2() {
                             <div style={{ height: '20px' }}></div>
 
 
-                            <strong> {user.posts} Posts {user.followers} followers  {user.following} following</strong>
+                            <span>
+                                {user.posts} <strong><FormattedMessage id="Posts" /></strong>
 
+                                <strong> </strong>
+
+                                {user.followers} <strong><FormattedMessage id="Followers" /></strong>
+
+                                <strong> </strong>
+
+                                {user.following} <strong><FormattedMessage id="Following" /></strong>
+                            </span>
                         </Row>
                     </Col>
 
