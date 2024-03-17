@@ -1,10 +1,10 @@
 [
     {
         "photo": "https://fastly.picsum.photos/id/95/350/350.jpg?hmac=CLiGnqGW6NRXYEuiPIDnmjcdRMYt2Gerl3V9D2ZEnmo",
-        "username": "JuanNombreUsuario",
-        "firstname": "daniel",
-        "lastname": "vargas",
-        "description": "descripcion muy larga de un perfil",
+        "username": "DanielNombrePerfil",
+        "firstname": "Daniel",
+        "lastname": "Vargas",
+        "description": "Descripcion muy larga de un perfil",
         "url": "www.websiteRandom.com",
         "posts": 123,
         "followers": 234,

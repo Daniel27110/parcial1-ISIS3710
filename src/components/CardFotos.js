@@ -67,7 +67,7 @@ function CardList2() {
                             <div style={{ height: '10px' }}></div>
 
                             <p> {user.description}</p>
-                            <a> {user.url}</a>
+                            <a href={user.url} target="_blank" rel="noopener noreferrer"> {user.url} </a>
 
                             <div style={{ height: '20px' }}></div>
 
