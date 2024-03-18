@@ -75,7 +75,7 @@ const ForumComponent = () => {
 
                             <Link to={`/`} style={{ color: 'black', textDecoration: 'none' }}>
                                 <Button variant="primary" type="submit">
-                                    Guardar cambios
+                                    <FormattedMessage id="Save changes" />
                                 </Button>
                             </Link>
                         </Form>
